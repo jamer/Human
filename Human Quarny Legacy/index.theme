@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=LegacyHuman
+Comment=Ubuntu default theme for versions before 6.06
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=LegacyHuman
+IconTheme=gnome
+MetacityTheme=LegacyHuman

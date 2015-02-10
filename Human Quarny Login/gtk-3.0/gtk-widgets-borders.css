@@ -1,0 +1,151 @@
+/* Borders */
+
+.frame {
+/*    border-radius: 2px;
+    border-width: 0px;*/
+
+    /*border-image: url("assets/frame.png") 8 10 8 10 / 2px 10px 2px 10px stretch;*/
+}
+
+/* focused element borders */
+.entry:focus,
+GtkComboBox.combobox-entry .entry:focus,
+.button:focus:active,
+.button.default:active,
+GtkSwitch.trough:active {
+}
+
+
+/**********
+ * button *
+ **********/
+.button {
+    border-radius: 2px;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.button {
+border-color: mix (@bg_color, #ffffff, 0.220);
+}
+
+
+.menubar.menuitem:hover,
+.menubar .menuitem:hover {
+    border: 1px solid #2e2e2c;
+    border-bottom-width: 0px;
+    border-radius: 4px 4px 0 0;
+}
+
+/*********
+ * entry *
+ *********/
+.entry {
+    border-radius: 2px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+.entry {
+border-color: mix (@bg_color, #ffffff, 0.220);
+}
+
+.entry:focus {
+border-width: 2px;
+border-color: mix (@bg_color, #ffffff, 0.220);
+}
+
+.primary-toolbar .entry.progressbar,
+.primary-toolbar .entry.progressbar,
+.menubar.toolbar .entry.progressbar,
+.menubar.toolbar .entry.progressbar,
+.header-bar .entry.progressbar,
+.header-bar .entry.progressbar,
+.entry.progressbar {
+    border-radius: 2px;
+    border-width: 0;
+}
+
+/******************
+ * combobox entry *
+ ******************/
+GtkComboBox.combobox-entry .entry:first-child,
+GtkComboBox.combobox-entry .button:first-child {
+    border-image-width: 10px 1px 10px 12px;
+    border-radius: 2px 0 0 2px;
+    border-right-width: 0;
+}
+
+GtkComboBox.combobox-entry .entry:last-child,
+GtkComboBox.combobox-entry .button:last-child {
+    border-image-width: 10px 12px 10px 1px;
+    border-radius: 0 2px 2px 0;
+    border-left-width: 0;
+}
+
+GtkComboBox.combobox-entry .button {
+border-color: mix (@bg_color, #ffffff, 0.220);
+}
+
+.trough,
+.trough.highlight {
+    border-radius: 2px;
+    border-width: 1px;
+    border-style: solid;
+}
+
+
+GtkSwitch.trough {
+border-color: mix (@bg_color, #ffffff, 0.220);
+
+}
+
+GtkSwitch.trough:active {
+border-color: mix (@bg_color, #ffffff, 0.220);
+
+}
+
+.primary-toolbar GtkSwitch.trough,
+.menubar.toolbar GtkSwitch.trough,
+.header-bar GtkSwitch.trough {
+border-color: mix (@bg_color, #ffffff, 0.220);
+
+}
+
+.primary-toolbar GtkSwitch.trough:active,
+.menubar.toolbar GtkSwitch.trough:active,
+.header-bar GtkSwitch.trough:active {
+border-color: mix (@bg_color, #ffffff, 0.220);
+
+}
+
+/* XXX temporary */
+GtkSwitch.trough:backdrop,
+GtkSwitch.trough:active:backdrop,
+GtkSwitch.trough:insensitive,
+GtkSwitch.trough:active:insensitive {
+border-color: mix (@bg_color, #ffffff, 0.220);
+
+}
+
+GtkSwitch.slider {
+border-color: mix (@bg_color, #ffffff, 0.220);
+}
+GtkSwitch.slider:active {
+border-color: mix (@bg_color, #ffffff, 0.220);
+}
+
+/* XXX temporary */
+GtkSwitch.slider:backdrop,
+GtkSwitch.slider:insensitive {
+border-color: mix (@bg_color, #ffffff, 0.220);
+
+}
+
+/* XXX temporary */
+GtkSwitch.slider:active:backdrop,
+GtkSwitch.slider:active:insensitive {
+border-color: mix (@bg_color, #ffffff, 0.220);
+
+}

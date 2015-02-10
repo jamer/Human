@@ -1,0 +1,186 @@
+/* Borders */
+
+.frame {
+/*    border-radius: 7px;
+    border-width: 0px;*/
+
+    /*border-image: url("assets/frame.png") 8 10 8 10 / 3px 10px 3px 10px stretch;*/
+}
+
+/* focused element borders */
+.entry:focus,
+GtkComboBox.combobox-entry .entry:focus,
+.button:focus:active,
+.button.default:active,
+GtkSwitch.trough:active {
+}
+
+/**********
+ * button *
+ **********/
+.button {
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.button {
+    border-color: shade (@bg_color, 0.60);
+}
+
+.menubar.menuitem:hover,
+.menubar .menuitem:hover {
+    border: 1px solid #2e2e2c;
+    border-bottom-width: 0px;
+    border-radius: 4px 4px 0 0;
+}
+
+/*********
+ * entry *
+ *********/
+.entry {
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.entry {
+    border-color: shade (@bg_color, 0.60);
+}
+
+.primary-toolbar .entry.progressbar,
+.primary-toolbar .entry.progressbar,
+.menubar.toolbar .entry.progressbar,
+.menubar.toolbar .entry.progressbar,
+.header-bar .entry.progressbar,
+.header-bar .entry.progressbar,
+.entry.progressbar {
+    border-radius: 3px;
+    border-width: 0;
+}
+
+/******************
+ * combobox entry *
+ ******************/
+GtkComboBox.combobox-entry .entry:first-child,
+GtkComboBox.combobox-entry .button:first-child {
+    border-image-width: 10px 1px 10px 12px;
+    border-radius: 3px 0 0 3px;
+    border-right-width: 0;
+}
+
+GtkComboBox.combobox-entry .entry:last-child,
+GtkComboBox.combobox-entry .button:last-child {
+    border-image-width: 10px 12px 10px 1px;
+    border-radius: 0 3px 3px 0;
+    border-left-width: 0;
+}
+
+GtkComboBox.combobox-entry .button {
+    border-color: shade (@bg_color, 0.60);
+}
+.trough,
+.trough.highlight {
+    border-radius: 2px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: shade (@bg_color, 0.60);
+}
+
+
+GtkSwitch.trough {
+    border-color: shade (@bg_color, 0.60);
+}
+
+GtkSwitch.trough:active {
+    border-color: shade (@bg_color, 0.60);
+}
+
+.primary-toolbar GtkSwitch.trough,
+.menubar.toolbar GtkSwitch.trough,
+.header-bar GtkSwitch.trough {
+    border-color: shade (@bg_color, 0.60);
+}
+
+.primary-toolbar GtkSwitch.trough:active,
+.menubar.toolbar GtkSwitch.trough:active,
+.header-bar GtkSwitch.trough:active {
+    border-color: shade (@bg_color, 0.60);
+}
+
+/* XXX temporary */
+GtkSwitch.trough:backdrop,
+GtkSwitch.trough:active:backdrop,
+GtkSwitch.trough:insensitive,
+GtkSwitch.trough:active:insensitive {
+    border-color: shade (@bg_color, 0.60);
+}
+
+GtkSwitch.slider {
+    border-color: shade (@bg_color, 0.60);
+}
+GtkSwitch.slider:active {
+    border-color: shade (@bg_color, 0.60);
+}
+
+/* XXX temporary */
+GtkSwitch.slider:backdrop,
+GtkSwitch.slider:insensitive {
+    border-color: shade (@bg_color, 0.60);
+}
+
+/* XXX temporary */
+GtkSwitch.slider:active:backdrop,
+GtkSwitch.slider:active:insensitive {
+    border-color: shade (@bg_color, 0.60);
+}
+
+
+.scale.trough {
+    border-image: url("assets/scale-horizontal-trough.png") 2 6 2 6 / 2px 6px 2px 6px stretch;
+}
+
+.scale.trough:insensitive {
+    border-image: url("assets/scale-horizontal-trough-disabled.png") 2 6 2 6 / 2px 6px 2px 6px stretch;
+}
+
+.scale.trough:backdrop {
+    border-image: url("assets/scale-horizontal-trough-backdrop.png") 2 6 2 6 / 2px 6px 2px 6px stretch;
+}
+
+.scale.trough.vertical {
+    border-image: url("assets/scale-vertical-trough.png") 6 2 6 2 / 6px 2px 6px 2px stretch;
+}
+
+.scale.trough.vertical:insensitive {
+    border-image: url("assets/scale-vertical-trough-disabled.png") 6 2 6 2 / 6px 2px 6px 2px stretch;
+}
+
+.scale.trough.highlight.left {
+    border-image: url("assets/scale-horizontal-fill.png") 2 6 2 6 / 2px 6px 2px 6px stretch;
+}
+
+.scale.trough.vertical:backdrop {
+    border-image: url("assets/scale-vertical-trough-backdrop.png") 6 2 6 2 / 6px 2px 6px 2px stretch;
+}
+
+.scale.trough.highlight.left:insensitive {
+    border-image: url("assets/scale-horizontal-fill-disabled.png") 2 6 2 6 / 2px 6px 2px 6px stretch;
+}
+
+.scale.trough.highlight.left:backdrop {
+    border-image: url("assets/scale-horizontal-fill-backdrop.png") 2 6 2 6 / 2px 6px 2px 6px stretch;
+}
+
+.scale.trough.highlight.bottom.vertical {
+    border-image: url("assets/scale-vertical-fill.png") 6 2 6 2 / 6px 2px 6px 2px stretch;
+}
+
+.scale.trough.highlight.bottom.vertical:insensitive {
+    border-image: url("assets/scale-vertical-fill-disabled.png") 6 2 6 2 / 6px 2px 6px 2px stretch;
+}
+
+.scale.trough.highlight.bottom.vertical:backdrop {
+    border-image: url("assets/scale-vertical-fill-backdrop.png") 6 2 6 2 / 6px 2px 6px 2px stretch;
+}
+
